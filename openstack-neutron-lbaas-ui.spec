@@ -65,7 +65,7 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_148[01]_project* %{buildro
 %doc README.rst doc
 %license LICENSE
 %{python2_sitelib}/neutron_lbaas_dashboard
-%{python2_sitelib}/neutron_lbaas_dashboard-%{version}-py%{python_version}.egg-info
+%{python2_sitelib}/neutron_lbaas_dashboard-%{version}*-py%{python_version}.egg-info
 %{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/_148[01]*
 
 %files doc
