@@ -74,8 +74,3 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_148[01]_project* %{buildro
 
 
 %changelog
-* Fri Jun  3 2016 Matthias Runge <mrunge@redhat.com> - 1.0.0-3
-- initial package
-- drop python3 for the time being
-- added barbicanclient as dependency
-- removed build artifacts from doc-build
