@@ -4,8 +4,8 @@
 %global up_name neutron-lbaas-dashboard
 
 Name:           openstack-neutron-lbaas-ui
-Version:        XXX
-Release:        XXX
+Version:        1.0.0
+Release:        1%{?dist}
 Summary:        Horizon UI support for Neutron LBaaS
 
 License:        ASL 2.0
@@ -75,3 +75,6 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_148[01]_project* %{buildro
 
 
 %changelog
+* Wed Sep 14 2016 Haikel Guemar <hguemar@fedoraproject.org> 1.0.0-1
+- Update to 1.0.0
+
