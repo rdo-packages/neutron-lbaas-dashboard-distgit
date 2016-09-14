@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global with_test 0
 
 %global up_name neutron-lbaas-dashboard
