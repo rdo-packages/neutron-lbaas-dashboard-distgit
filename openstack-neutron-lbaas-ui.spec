@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global with_test 0
 
 %global up_name neutron-lbaas-dashboard
@@ -9,7 +10,7 @@ Summary:        Horizon UI support for Neutron LBaaS
 
 License:        ASL 2.0
 URL:            https://github.com/openstack/neutron-lbaas-dashboard/
-Source0:        http://tarballs.openstack.org/%{up_name}/%{up_name}-master.tar.gz
+Source0:        http://tarballs.openstack.org/%{up_name}/%{up_name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python2-devel
