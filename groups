@@ -1,5 +1,5 @@
-# UUID          Group Name
-False 	Non-Interactive Users
-18dcc2d492b4c6f101f81671676f79b374510371       	openstack/neutron-lbaas-dashboard-distgit-core
-b142d0ed22aba9271c99a059e6481a8bc9923f8d        	openstack/neutron-lbaas-dashboard-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+18dcc2d492b4c6f101f81671676f79b374510371	openstack/neutron-lbaas-dashboard-distgit-core
+b142d0ed22aba9271c99a059e6481a8bc9923f8d	openstack/neutron-lbaas-dashboard-distgit-ptl
+global:Registered-Users                 	Registered Users
