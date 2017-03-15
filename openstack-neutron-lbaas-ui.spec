@@ -54,7 +54,7 @@ rm -rf html/.doctrees
 %py2_install
 
 mkdir -p %{buildroot}%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/
-install -p -D -m 640 neutron_lbaas_dashboard/enabled/_148[01]_project* %{buildroot}%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/
+install -p -D -m 640 neutron_lbaas_dashboard/enabled/_1481_project* %{buildroot}%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/
 
 %check
 %if %{?with_test}
@@ -67,7 +67,7 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_148[01]_project* %{buildro
 %license LICENSE
 %{python2_sitelib}/neutron_lbaas_dashboard
 %{python2_sitelib}/neutron_lbaas_dashboard-%{version}*-py%{python_version}.egg-info
-%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/_148[01]*
+%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/_1481*
 
 %files doc
 %doc html
