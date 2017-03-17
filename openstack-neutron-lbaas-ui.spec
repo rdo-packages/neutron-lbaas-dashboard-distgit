@@ -5,7 +5,7 @@
 
 Name:           openstack-neutron-lbaas-ui
 Version:        2.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Horizon UI support for Neutron LBaaS
 
 License:        ASL 2.0
@@ -75,6 +75,9 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_1481_project* %{buildroot}
 
 
 %changelog
+* Fri Mar 17 2017 Alfredo Moralejo <amoralej@redhat.com> 2.0.0-2
+- Enable new ngloadbalancersv2 panel instead of deprecated loadbalancersv2
+
 * Fri Feb 17 2017 Alfredo Moralejo <amoralej@redhat.com> 2.0.0-1
 - Update to 2.0.0
 
