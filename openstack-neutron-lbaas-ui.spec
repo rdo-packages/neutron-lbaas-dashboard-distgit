@@ -19,7 +19,7 @@ BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-sphinx
 BuildRequires:  python-pbr
 Requires:  openstack-dashboard >= 9.0.0
-Requires:  python-barbicanclient
+Requires:  python-barbicanclient >= 4.0.0
 Requires:  python-pbr
 
 Provides:  neutron-lbaas-dashboard
