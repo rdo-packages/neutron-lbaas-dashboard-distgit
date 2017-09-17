@@ -18,6 +18,7 @@ BuildRequires:  python-setuptools
 BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-sphinx
 BuildRequires:  python-pbr
+BuildRequires:  openstack-macros
 Requires:  openstack-dashboard >= 9.0.0
 Requires:  python-barbicanclient >= 4.0.0
 Requires:  python-pbr
@@ -37,7 +38,7 @@ Documentation for Neutron LBaaS dashboard
 %autosetup -n %{up_name}-%{upstream_version} -p1
 
 # Let RPM handle the dependencies
-rm -f test-requirements.txt requirements.txt
+%py_req_cleanup
 
 %build
 %py2_build
