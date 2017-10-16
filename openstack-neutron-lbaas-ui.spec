@@ -34,7 +34,7 @@ Documentation for Neutron LBaaS dashboard
 
 
 %prep
-%autosetup -n %{up_name}-%{upstream_version}
+%autosetup -n %{up_name}-%{upstream_version} -p1
 
 # Let RPM handle the dependencies
 rm -f test-requirements.txt requirements.txt
