@@ -13,10 +13,13 @@ URL:            https://github.com/openstack/neutron-lbaas-dashboard/
 Source0:        https://tarballs.openstack.org/%{up_name}/%{up_name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
+BuildRequires:  git
 BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
 BuildRequires:  python-sphinx
-BuildRequires:  python-oslo-sphinx
+BuildRequires:  python-openstackdocstheme
+BuildRequires:  openstack-dashboard
+BuildRequires:  python-barbicanclient
 BuildRequires:  python-pbr
 BuildRequires:  openstack-macros
 Requires:  openstack-dashboard >= 9.0.0
@@ -35,7 +38,7 @@ Documentation for Neutron LBaaS dashboard
 
 
 %prep
-%autosetup -n %{up_name}-%{upstream_version} -p1
+%autosetup -n %{up_name}-%{upstream_version} -p1 -S git
 
 # Let RPM handle the dependencies
 %py_req_cleanup
@@ -44,11 +47,12 @@ Documentation for Neutron LBaaS dashboard
 %py2_build
 
 export PBR_VERSION="1.8.1"
-sphinx-build doc/source html
+export PYTHONPATH="%{_datadir}/openstack-dashboard:%{python2_sitearch}:%{python2_sitelib}:%{buildroot}%{python2_sitelib}"
+sphinx-build -W -b html doc/source doc/build/html
 
 # clean up files after sphinx
-rm html/.buildinfo
-rm -rf html/.doctrees
+rm doc/build/html/.buildinfo
+rm -rf doc/build/html/.doctrees
 
 
 %install
@@ -71,7 +75,7 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_1481_project* %{buildroot}
 %{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/_1481*
 
 %files doc
-%doc html
+%doc doc/build/html
 %license LICENSE
 
 
