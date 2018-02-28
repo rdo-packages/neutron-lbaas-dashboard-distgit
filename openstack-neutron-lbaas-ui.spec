@@ -1,4 +1,3 @@
-%global milestone .0rc1
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global with_test 0
 
@@ -6,15 +5,13 @@
 
 Name:           openstack-neutron-lbaas-ui
 Version:        4.0.0
-Release:        0.1%{?milestone}%{?dist}
+Release:        1%{?dist}
 Summary:        Horizon UI support for Neutron LBaaS
 
 License:        ASL 2.0
 URL:            https://github.com/openstack/neutron-lbaas-dashboard/
 Source0:        https://tarballs.openstack.org/%{up_name}/%{up_name}-%{upstream_version}.tar.gz
 
-#
-# patches_base=4.0.0.0rc1
 #
 
 BuildArch:      noarch
@@ -85,6 +82,9 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_1481_project* %{buildroot}
 
 
 %changelog
+* Wed Feb 28 2018 RDO <dev@lists.rdoproject.org> 4.0.0-1
+- Update to 4.0.0
+
 * Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 4.0.0-0.1.0rc1
 - Update to 4.0.0.0rc1
 
