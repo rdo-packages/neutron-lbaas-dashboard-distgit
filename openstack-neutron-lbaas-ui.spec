@@ -4,7 +4,7 @@
 %global up_name neutron-lbaas-dashboard
 
 Name:           openstack-neutron-lbaas-ui
-Version:        3.0.1
+Version:        3.0.2
 Release:        1%{?dist}
 Summary:        Horizon UI support for Neutron LBaaS
 
@@ -77,6 +77,9 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_1481_project* %{buildroot}
 
 
 %changelog
+* Mon Apr 09 2018 RDO <dev@lists.rdoproject.org> 3.0.2-1
+- Update to 3.0.2
+
 * Wed Aug 30 2017 rdo-trunk <javier.pena@redhat.com> 3.0.1-1
 - Update to 3.0.1
 
