@@ -19,12 +19,13 @@ BuildRequires:  python-setuptools
 BuildRequires:  python-sphinx
 BuildRequires:  python-openstackdocstheme
 BuildRequires:  openstack-dashboard
-BuildRequires:  python-barbicanclient
-BuildRequires:  python-pbr
+BuildRequires:  python2-barbicanclient
+BuildRequires:  python2-pbr
 BuildRequires:  openstack-macros
-Requires:  openstack-dashboard >= 9.0.0
-Requires:  python-barbicanclient >= 4.0.0
+Requires:  openstack-dashboard >= 13.0.0
+Requires:  python-barbicanclient >= 4.5.2
 Requires:  python-pbr
+Requires:  python2-oslo-log >= 3.36.0
 
 Provides:  neutron-lbaas-dashboard
 
