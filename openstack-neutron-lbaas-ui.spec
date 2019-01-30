@@ -35,8 +35,6 @@ BuildArch:      noarch
 BuildRequires:  git
 BuildRequires:  python%{pyver}-devel
 BuildRequires:  python%{pyver}-setuptools
-BuildRequires:  python%{pyver}-sphinx
-BuildRequires:  python%{pyver}-openstackdocstheme
 BuildRequires:  openstack-dashboard
 BuildRequires:  python%{pyver}-barbicanclient
 BuildRequires:  python%{pyver}-pbr
@@ -54,6 +52,8 @@ Horizon panels for Neutron LBaaS v2
 %if 0%{?with_doc}
 %package doc
 Summary: Documentation for Neutron LBaaS dashboard
+BuildRequires:  python%{pyver}-sphinx
+BuildRequires:  python%{pyver}-openstackdocstheme
 %description doc
 Documentation for Neutron LBaaS dashboard
 %endif
