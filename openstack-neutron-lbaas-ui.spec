@@ -39,7 +39,7 @@ BuildRequires:  openstack-dashboard
 BuildRequires:  python%{pyver}-barbicanclient
 BuildRequires:  python%{pyver}-pbr
 BuildRequires:  openstack-macros
-Requires:  openstack-dashboard >= 13.0.0
+Requires:  openstack-dashboard >= 14.0.0
 Requires:  python%{pyver}-barbicanclient >= 4.5.2
 Requires:  python%{pyver}-pbr
 Requires:  python%{pyver}-oslo-log >= 3.36.0
