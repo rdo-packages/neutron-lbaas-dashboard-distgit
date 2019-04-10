@@ -1,4 +1,3 @@
-%global milestone .0rc1
 # Macros for py2/py3 compatibility
 %if 0%{?fedora} || 0%{?rhel} > 7
 %global pyver %{python3_pkgversion}
@@ -25,15 +24,13 @@
 
 Name:           openstack-neutron-lbaas-ui
 Version:        6.0.0
-Release:        0.1%{?milestone}%{?dist}
+Release:        1%{?dist}
 Summary:        Horizon UI support for Neutron LBaaS
 
 License:        ASL 2.0
 URL:            https://github.com/openstack/neutron-lbaas-dashboard/
 Source0:        https://tarballs.openstack.org/%{up_name}/%{up_name}-%{upstream_version}.tar.gz
 
-#
-# patches_base=6.0.0.0rc1
 #
 
 BuildArch:      noarch
@@ -111,6 +108,9 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_1481_project* %{buildroot}
 
 
 %changelog
+* Wed Apr 10 2019 RDO <dev@lists.rdoproject.org> 6.0.0-1
+- Update to 6.0.0
+
 * Fri Mar 22 2019 RDO <dev@lists.rdoproject.org> 6.0.0-0.1.0rc1
 - Update to 6.0.0.0rc1
 
