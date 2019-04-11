@@ -53,6 +53,7 @@ Horizon panels for Neutron LBaaS v2
 %package doc
 Summary: Documentation for Neutron LBaaS dashboard
 BuildRequires:  python%{pyver}-sphinx
+BuildRequires:  python%{pyver}-sphinxcontrib-apidoc
 BuildRequires:  python%{pyver}-openstackdocstheme
 %description doc
 Documentation for Neutron LBaaS dashboard
