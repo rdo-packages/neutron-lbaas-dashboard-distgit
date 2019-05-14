@@ -107,3 +107,4 @@ install -p -D -m 640 neutron_lbaas_dashboard/enabled/_1481_project* %{buildroot}
 
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/neutron-lbaas-dashboard/commit/?id=7d60958b8c60bd09468ff946e667309f22ebde09
