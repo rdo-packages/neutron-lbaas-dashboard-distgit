@@ -85,7 +85,7 @@ rm -rf doc/build/html/.doctrees
 %{pyver_install}
 
 mkdir -p %{buildroot}%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/
-install -p -D -m 640 neutron_lbaas_dashboard/enabled/_1481_project* %{buildroot}%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/
+install -p -D -m 644 neutron_lbaas_dashboard/enabled/_1481_project* %{buildroot}%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/
 
 %check
 %if %{?with_test}
