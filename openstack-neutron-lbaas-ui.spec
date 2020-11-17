@@ -32,7 +32,7 @@ URL:            https://github.com/openstack/neutron-lbaas-dashboard/
 Source0:        https://tarballs.openstack.org/%{up_name}/%{up_name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  python%{pyver}-devel
 BuildRequires:  python%{pyver}-setuptools
 BuildRequires:  openstack-dashboard
